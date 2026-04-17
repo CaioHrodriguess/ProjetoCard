@@ -8,16 +8,22 @@
 
     <style>
         body{
+            background: linear-gradient(-45deg, rgb(0, 0, 0), rgb(128, 0, 4), rgb(0, 0, 0));
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
             margin: 0%;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgb(119, 1, 1);
             font-family: Arial, Helvetica, sans-serif;
             color: aliceblue;
         }
-
+        @keyframes gradientBG{
+            0%{background-position: 0% 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0% 50%;}
+        }
         .card{
             background-color: rgb(85, 2, 2);
             padding: 20px;
@@ -28,7 +34,7 @@
         }
         .imgperfil{
             width: 180px;
-            height: 180pxjk;
+            height: 180px;
             border-radius: 50%;
             border-radius: 50%;
             border: 5px solid rgb(255, 255, 255);
@@ -58,6 +64,10 @@
         }
 
         .btn{
+            background-color: aliceblue;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
             padding: 10px 18px;
             border-radius: 6px;
             border: 1px solid rgb(0, 0, 0);
@@ -65,10 +75,13 @@
             font-size: 15px;
             transition: 0.3s;
         }
+        a{
+            text-decoration: none;
+        }
 
         .btn:hover{
             opacity: 0.8;
-            background: rgb(255, 206, 206);
+            background: rgb(241, 133, 133);
         }
 
         .skills{
@@ -100,6 +113,10 @@
             gap: 15px;
             font-size: 20px;
         }
+        .social-media a{
+            text-decoration: none;
+            color: white;
+        }
 
         .social-media i{
             cursor: pointer;
@@ -107,7 +124,7 @@
         }
 
         .social-media i:hover{
-            color: brown;
+            color: rgb(243, 112, 112);
             transform: scale(1.2);
         }
 
@@ -116,14 +133,14 @@
 </head>
 <body>
     <div class="card">
-        <img src="ronaldincaricatura.png" alt="Foto de Perfil" class="imgperfil">
+        <img src="C:\Users\1066730\Documents\UC13\ProjetoCard\ronaldincaricatura.png" alt="Foto de Perfil" class="imgperfil">
         <h2>Caio Henrique R. Nunes</h2>
         <div class="local">Montes Claros - MG</div>
         <div class="job">Técnico em Informática <br>Engenheiro da Computação</div>
 
         <div class="botoes">
-            <button class="btn primario">Mensagem
-            <button class="btn secundario">Follow
+            <a href="https://wa.me/5538991895819?text=Olá,%20vim%20pelo%20card." target="_blank" class="btn primario">Mensagem</a>
+            <a href="https://www.linkedin.com/in/caio-henrique-8b83703b3/" target="_blank" class="btn secundario">Follow</a>
         </div>
         <div class="skills">
             <h3>Habilidades:</h3>
@@ -139,11 +156,10 @@
             </div>
         </div>
         <div class="social-media">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5538991895819" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/caio_henriquekkj" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/CaioHrodriguess" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/caio-henrique-8b83703b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
     
